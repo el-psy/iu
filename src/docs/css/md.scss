@@ -1,0 +1,61 @@
+$iu_md_bgc: #c7c7c7;
+
+div.markdown-body {
+	width: 100%;
+	min-height: 100%;
+	box-sizing: border-box;
+	padding: 5px;
+	background-color: $iu_md_bgc;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+
+	h1 {
+		font-size: 28px;
+	}
+	h2 {
+		font-size: 24px;
+	}
+	h3 {
+		font-size: 20px;
+	}
+
+	h4, h5, h6 {
+		font-size: 16px;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		&::after {
+			display: block;
+			content: '';
+			height: 1px;
+			// width: 95%;
+			margin: 0 auto;
+			background-color: #aaa;
+		}
+	}
+
+	div.iu-show {
+		border: 1px solid #aaa;
+		padding: 20px;
+		font-size: 16px;
+	}
+
+	div.iu-show-descript p {
+		font-size: 14px;
+	}
+
+	table {
+		border: 1px solid black;
+		th, td {
+			padding: 2px 6px;
+			font-weight: normal;
+			border: 1px solid black;
+			text-align: center;
+		}
+	}
+}
+
+div.iu-md-container {
+	margin: 20px;
+}
+

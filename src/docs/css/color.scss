@@ -1,0 +1,125 @@
+$iu-pure-red: #ff0000;
+$iu-pure-lime: #00ff00;
+$iu-pure-blue: #0000ff;
+$iu-pure-yellow: #ffff00;
+$iu-pure-fuchsia: #ff00ff;
+$iu-pure-aqua: #00ffff;
+$iu-pure-plain: #999;
+
+$iu-light-red: #ffc0c0;
+$iu-light-lime: #77ff77;
+$iu-light-blue: #a3a3ff;
+$iu-light-yellow: #ffff77;
+$iu-light-fuchsia: #ffa9ff;
+$iu-light-aqua: #88fcfc;
+$iu-light-plain: #fff;
+
+$iu-deep-red: #aa0000;
+$iu-deep-lime: #00aa00;
+$iu-deep-blue: #0000aa;
+$iu-deep-yellow: #ffb800;
+$iu-deep-fuchsia: #aa00aa;
+$iu-deep-aqua: #009494;
+$iu-deep-plain: #444;
+
+$iu-dark-red: #660000;
+$iu-dark-lime: #005800;
+$iu-dark-blue: #000066;
+$iu-dark-yellow: #9e7100;
+$iu-dark-fuchsia: #660066;
+$iu-dark-aqua: #006666;
+$iu-dark-plain: #000;
+
+@function bright_color($bright, $color){
+	@if $bright == 'dark' and $color == 'red' {
+		@return $iu-dark-red;
+	}
+	@if $bright == 'dark' and $color == 'lime' {
+		@return $iu-dark-lime;
+	}
+	@if $bright == 'dark' and $color == 'blue' {
+		@return $iu-dark-blue;
+	}
+	@if $bright == 'dark' and $color == 'yellow' {
+		@return $iu-dark-yellow;
+	}
+	@if $bright == 'dark' and $color == 'fuchsia' {
+		@return $iu-dark-fuchsia;
+	}
+	@if $bright == 'dark' and $color == 'aqua' {
+		@return $iu-dark-aqua;
+	}
+	@if $bright == 'dark' and $color == 'plain' {
+		@return $iu-dark-plain;
+	}
+
+	@if $bright == 'pure' and $color == 'red' {
+		@return $iu-pure-red;
+	}
+	@if $bright == 'pure' and $color == 'lime' {
+		@return $iu-pure-lime;
+	}
+	@if $bright == 'pure' and $color == 'blue' {
+		@return $iu-pure-blue;
+	}
+	@if $bright == 'pure' and $color == 'yellow' {
+		@return $iu-pure-yellow;
+	}
+	@if $bright == 'pure' and $color == 'fuchsia' {
+		@return $iu-pure-fuchsia;
+	}
+	@if $bright == 'pure' and $color == 'aqua' {
+		@return $iu-pure-aqua;
+	}
+	@if $bright == 'pure' and $color == 'plain' {
+		@return $iu-pure-plain;
+	}
+
+	@if $bright == 'light' and $color == 'red' {
+		@return $iu-light-red;
+	}
+	@if $bright == 'light' and $color == 'lime' {
+		@return $iu-light-lime;
+	}
+	@if $bright == 'light' and $color == 'blue' {
+		@return $iu-light-blue;
+	}
+	@if $bright == 'light' and $color == 'yellow' {
+		@return $iu-light-yellow;
+	}
+	@if $bright == 'light' and $color == 'fuchsia' {
+		@return $iu-light-fuchsia;
+	}
+	@if $bright == 'light' and $color == 'aqua' {
+		@return $iu-light-aqua;
+	}
+	@if $bright == 'light' and $color == 'plain' {
+		@return $iu-light-plain;
+	}
+
+	@if $bright == 'deep' and $color == 'red' {
+		@return $iu-deep-red;
+	}
+	@if $bright == 'deep' and $color == 'lime' {
+		@return $iu-deep-lime;
+	}
+	@if $bright == 'deep' and $color == 'blue' {
+		@return $iu-deep-blue;
+	}
+	@if $bright == 'deep' and $color == 'yellow' {
+		@return $iu-deep-yellow;
+	}
+	@if $bright == 'deep' and $color == 'fuchsia' {
+		@return $iu-deep-fuchsia;
+	}
+	@if $bright == 'deep' and $color == 'aqua' {
+		@return $iu-deep-aqua;
+	}
+	@if $bright == 'deep' and $color == 'plain' {
+		@return $iu-deep-plain;
+	}
+
+	@return white;
+}
+
+$color-list: "red" "lime" "blue" "yellow" "fuchsia" "aqua" "plain";
