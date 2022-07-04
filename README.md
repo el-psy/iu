@@ -1,11 +1,46 @@
-# Vue 3 + Typescript + Vite
+# 起源
 
-This template should help get you started developing with Vue 3 and Typescript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+不过是为了在简历上增加一行字而已。顺便研究一下组件库。
 
-## Recommended IDE Setup
+## 初始阶段
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+当然是构建框架了。
+主要是编写完组件之后能够使用md文件编写示例。
 
-## Type Support For `.vue` Imports in TS
+然后寻找了很多组件库的代码，主要是layui-vue的框架比较简单易懂。而且其框架的构建者应该是一位正则表达式大师？不过在仔细了解其框架之后也了解一些缺陷？比如同一个md文件最终会编译成一个vue文件，所以多个vue组件演示中出现的相同名称的变量会视为同一个变量。
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's `.vue` type support plugin by running `Volar: Switch TS Plugin on/off` from VSCode command palette.
+## 组件构建阶段
+
+使用无知者无畏的态度来探索组件库构建之路。
+首先是挑选了一些颜色。
+没记错第一个组件是button。十分痛苦。hover，active，多种不同状态需要变化。
+接下来比较难的应该是grid？虽然很多组件库都有相应实现，但是根源还是在于页面排版。
+剩下的比较难的应该就是tab，menu和carousel了。三者都是大组件套若干个item组件的样式，都或许需要在构建之后进行一定的父子组件通信，交流子组件的详细信息；或者在使用时注入对应信息。后者麻烦了使用者。
+
+## 最终阶段
+
+虽然看上去很是残破，连代码展示的伸缩效果都没有写。
+但是已经构建了一些稍有难度的常用组件。虽然组件的功能有些残缺（比如替换颜色之类的）。而且typescript的配置好像有点问题。
+但是时间已经不多了，应该是构建简历的时候了。
+
+# 目录
+
+```
+-- src
+	-- component 组件代码
+	-- docs 项目核心文件所在
+		-- base_component 基础组件，构建框架所用
+		-- css 公共的一些css
+		-- md_component 组件展示md
+		-- store 没有使用的vuex
+	-- homepage 整个项目的主页
+	-- plugin vite的vite_plugin_md的插件？基本照搬layui
+	-- vite_plugin_md 就是vite_plugin_md的源代码，搬过来是为了方便观察md转换成vue文件的文件内容。
+```
+
+# 其他
+
+或许有人想要使用这些东西。还是放弃比较好。
+不过如果是想询问一点编写问题，还是可以交流的。
+而且估计后面也不会对这个项目进行什么改进了。
+不过这应该是简历三行字里唯一的静态项目，所以应该是可以放到github pages里面的吧？
