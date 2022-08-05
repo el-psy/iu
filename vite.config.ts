@@ -18,7 +18,8 @@ export default defineConfig({
     rollupOptions:{
       input:{
         main:resolve(__dirname, './src/homepage/index.html'),
-        docs:resolve(__dirname, './src/docs/index.html')
+        docs:resolve(__dirname, './src/docs/index.html'),
+        start:resolve(__dirname, './src/index.html')
       }
     }
   },
